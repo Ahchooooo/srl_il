@@ -137,7 +137,7 @@ class titans_train_val_test:
             random_seed,
         ):
         self.sequence_dataset = TitansTrajectorySequenceDataset(data_directory)
-        
+        print(f"Total number of trajectories: {len(self.sequence_dataset)}")
         self.train_data, self.val_data, self.test_data =  get_train_val_test_seq_datasets(
             self.sequence_dataset,
             test_fraction = test_fraction,
