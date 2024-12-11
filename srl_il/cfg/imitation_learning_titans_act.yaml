@@ -18,7 +18,7 @@ pipeline:
 dataset_cfg:
   data:
     _target_: srl_il.dataset.titans_dataset.titans_train_val_test
-    data_directory: Data/srl/cube_relocation_processed
+    data_directory: datasets
     test_fraction: 0.1
     val_fraction: 0.1
     window_size_train: 20
