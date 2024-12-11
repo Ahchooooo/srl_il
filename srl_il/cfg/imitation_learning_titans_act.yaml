@@ -18,7 +18,7 @@ pipeline:
 dataset_cfg:
   data:
     _target_: srl_il.dataset.titans_dataset.titans_train_val_test
-    data_directory: datasets
+    data_directory: Data/srl/cube_relocation_processed
     test_fraction: 0.1
     val_fraction: 0.1
     window_size_train: 20
@@ -47,8 +47,8 @@ dataset_cfg:
     pad_type: 'near'
     random_seed: ${seed}
   batch_size: ${batch_size}
-  pin_memory: true
-  num_workers: 2
+  pin_memory: false
+  num_workers: 1
 
 
 algo_cfg:
