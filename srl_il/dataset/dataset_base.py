@@ -280,7 +280,7 @@ def get_train_val_test_seq_datasets(
         "pad_after": pad_after,
         "pad_type": pad_type,
     }
-    print(f"{self.train_traj_dataset.get_seq_length(0)=}")
+    print(f"{train_traj_dataset.get_seq_length(0)=}")
     train_seq_ds = SequenceDataset(train_traj_dataset, window_size=window_size_train, **seq_ds_kwargs)
 
     N_train = len(train_seq_ds)
