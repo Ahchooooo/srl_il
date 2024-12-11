@@ -263,6 +263,7 @@ def get_train_val_test_seq_datasets(
     """
     print(f"{test_fraction=}")
     N_trajs = len(traj_dataset)
+    print(f"{N_trajs=}")
     if test_fraction == 0:
         train_traj_dataset = traj_dataset
         test_traj_dataset = None
