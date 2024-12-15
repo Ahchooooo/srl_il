@@ -48,7 +48,7 @@ dataset_cfg:
     random_seed: ${seed}
   batch_size: ${batch_size}
   pin_memory: false
-  num_workers: 2
+  num_workers: 5
 
 
 algo_cfg:
